@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/swiper.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <header class="header section-gap" id="header">
+      <div class="container header__container flex">
+        <img class="logo" src="icons/logo.webp" alt="Логотип">
+        <div class="header__control flex">
+          <nav class="nav">
+            <ul class="nav__list list-reset flex">
+              <li class="nav__item">
+                <a class="nav__link" href="#about">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#resume">Резюме</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#stack">Навыки</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#projects">Проекты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="lang-wrap">
+            <a class="lang lang-ru lang--inactive">ru</a>
+            <span class="lang-separetor">&#47;</span>
+            <a class="lang lang-en btn-reset" href="en/index.html" tabindex="0">en</a>
+          </div>
+          <button class="theme-switch btn-reset">
+            <svg
+              class="theme-switch__color"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 -960 960 960"
+              width="24px"
+              fill="var(--dark-mode)">
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 
+							27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 
+							101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg
+              class="theme-switch__color"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 -960 960 960"
+              width="24px"
+              fill="var(--color-yellow)">
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 
+							141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 
+							0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 
+							96 100-52 56Zm492 496-97-101 53-55 101 97-57 
+							59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+          </button>
+        </div>
+        <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about section-gap" id="about">
+        <div class="container about__container flex">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <div class="about__content">
+            <p class="about__text">
+              Привет&#128075;, Меня зовут
+              <span class="about__text-style">Андрей,</span>
+              я&nbsp;веб-разработчик. Создаю современные и&nbsp;эффективные решения для интернета, которые помогают
+              людям и&nbsp;бизнесу
+              достигать новых высот.
+            </p>
+          </div>
+          <img class="about__img" src="img/me.webp" alt="Моя фотография">
+        </div>
+      </section>
+
+      <section class="resume section-gap" id="resume">
+        <div class="container resume__container">
+          <div class="resume__contant flex">
+            <h2 class="resume__title section-title">Резюме</h2>
+            <ul class="resume__list list-reset">
+              <li class="resume__item">Адаптивная, кросс-браузерная, валидная вёрстка</li>
+              <li class="resume__item">Вёрстка из макетов Figma, Adobe Photoshop</li>
+              <li class="resume__item">HTML-вёрстка писем для email рассылок</li>
+              <li class="resume__item">Хорошее и практическое владение JS / Jquery</li>
+              <li class="resume__item">Опыт работы с CMS WP, Bitrix, Joomla</li>
+            </ul>
+            <a class="btn resume__btn btn-reset flex" href="doc/resume.pdf" target="_blank">
+              <span class="btn__text">Скачать резюме</span>
+            </a>
+          </div>
+        </div>
+        <video class="resume__video" autoplay muted loop>
+          <source src="video/1.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section class="stack section-gap" id="stack">
+        <div class="container">
+          <h2 class="stack__title section-title section-title">Навыки</h2>
+          <h3 class="stack__subtitle section-subtitle">Технологии, с которыми я работаю</h3>
+          <ul class="stack__list-work list-reset flex">
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#html5"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#css"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#bootstrap"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#sass"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#gulp"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#mjml"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#js"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#jq"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#bitrix"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#wp"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#photoshop"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#figma"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#vscode"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#github"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3 class="stack__subtitle section-subtitle">Технологии, которые я изучаю</h3>
+          <ul class="stack__list-learn list-reset flex">
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#react"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#ts"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#node"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#mysql"></use>
+              </svg>
+            </li>
+            <li class="stack__item">
+              <svg class="stack__img">
+                <use xlink:href="icons/sprite.svg#php"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3 class="stack__subtitle section-subtitle">Сертификаты</h3>
+          <ul class="stack-cert__list list-reset flex">
+            <li class="stack-cert__item cert-cademy">
+              <a href="#!" class="stack-cert__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </li>
+            <li class="stack-cert__item cert-skillbox">
+              <a href="#!" class="stack-cert__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </li>
+            <li class="stack-cert__item cert-udemy">
+              <a href="#!" class="stack-cert__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </li>
+            <li class="stack-cert__item cert-udemy">
+              <a href="#!" class="stack-cert__link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects section-gap" id="projects">
+        <div class="container">
+          <h2 class="section-title">Мои проекты</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="projects__item">
+                  <h3 class="projects__subtitle">Project Tile goes here</h3>
+                  <div class="projects__text">
+                    <p class="projects__descr">
+                      This is sample project description random things are here in description This is sample project
+                      lorem
+                      ipsum generator for
+                      dummy content
+                    </p>
+                    <p class="projects__stack">
+                      Технологии:
+                      <span class="projects__stack-list">HTML , JavaScript, SASS, React</span>
+                    </p>
+                  </div>
+                  <div class="projects__links flex">
+                    <a class="projects__view" href="#!">Посмотреть проект</a>
+                    <a class="projects__code" href="#!">Посмотреть код</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__top flex">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a href="#header" class="logo footer__logo">
+            <img class="logo__img" src="icons/logo-footer.webp" alt="Логотип">
+          </a>
+          <div class="phone flex">
+            <a class="phone__link" href="tel:+79254107737">RU +7 (925) 410-77-37</a>
+            <a class="phone__link" href="tel:+375297737997">BY +375 (29) 773-79-97</a>
+          </div>
+          <div class="mail">
+            <a class="mail__link" href="mailto:vedinche@gmail.com">vedinche@gmail.com</a>
+          </div>
+          <ul class="social list-reset flex">
+            <li class="social__item">
+              <a class="social__link social__git" href="https://github.com/vedinche" target="_blank">
+                <svg class="social__img">
+                  <use xlink:href="icons/sprite.svg#github-md"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__codepen" href="https://codepen.io/vedinche" target="_blank">
+                <svg class="social__img">
+                  <use xlink:href="icons/sprite.svg#codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/vedin_che" target="_blank">
+                <svg class="social__img">
+                  <use xlink:href="icons/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__wapp" href="https://wa.me/79254107737" target="_blank">
+                <svg class="social__img">
+                  <use xlink:href="icons/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom flex">
+          <nav class="footer__nav flex">
+            <ul class="footer__nav-list list-reset flex">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#about">Обо мне</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#resume">Резюме</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#stack">Навыки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#projects">Проекты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="author" href="https://github.com/vedinche">&#169; vedinche</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
